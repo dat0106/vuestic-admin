@@ -1,5 +1,5 @@
 import { useUsers } from '../../users/composables/useUsers'
-import { Project } from '../types'
+import Project from '../types'
 
 export function useProjectUsers() {
   const { users } = useUsers()

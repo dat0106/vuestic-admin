@@ -77,34 +77,34 @@ const formData = reactive({
   repeatPassword: '',
 })
 // use firebase to create a new user
-const submit = async () => {
-  if (validate()) {
-    try {
-      // const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password)
-      // console.log(userCredential)
-      init({
-        message: "You've successfully signed up",
-        color: 'success',
-      })
-      push({ name: 'dashboard' })
-    } catch (error) {
-      init({
-        message: 'An error occurred. Please try again',
-        color: 'danger',
-      })
-    }
-  }
-}
-
-// const submit = () => {
+// const submit = async () => {
 //   if (validate()) {
-//     init({
-//       message: "You've successfully signed up",
-//       color: 'success',
-//     })
-//     push({ name: 'dashboard' })
+//     try {
+//       // const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password)
+//       // console.log(userCredential)
+//       init({
+//         message: "You've successfully signed up",
+//         color: 'success',
+//       })
+//       push({ name: 'dashboard' })
+//     } catch (error) {
+//       init({
+//         message: 'An error occurred. Please try again',
+//         color: 'danger',
+//       })
+//     }
 //   }
 // }
+
+const submit = () => {
+  if (validate()) {
+    init({
+      message: "You've successfully signed up",
+      color: 'success',
+    })
+    push({ name: 'dashboard' })
+  }
+}
 
 const passwordRules: ((v: string) => boolean | string)[] = [
   (v) => !!v || 'Password field is required',

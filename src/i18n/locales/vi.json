@@ -1,0 +1,245 @@
+{
+  "auth": {
+    "agree": "Tôi đồng ý với",
+    "createAccount": "Tạo tài khoản",
+    "createNewAccount": "Tạo tài khoản mới",
+    "email": "Email",
+    "login": "Đăng nhập",
+    "password": "Mật khẩu",
+    "recover_password": "Khôi phục mật khẩu",
+    "sign_up": "Đăng ký",
+    "keep_logged_in": "Giữ tôi đăng nhập",
+    "termsOfUse": "Điều khoản sử dụng.",
+    "reset_password": "Đặt lại mật khẩu"
+  },
+  "404": {
+    "title": "Trang này không tồn tại.",
+    "text": "Nếu bạn cảm thấy điều này không đúng, vui lòng gửi tin nhắn cho chúng tôi tại",
+    "back_button": "Quay lại bảng điều khiển"
+  },
+  "typography": {
+    "primary": "Kiểu chữ chính",
+    "secondary": "Kiểu chữ phụ"
+  },
+  "dashboard": {
+    "versions": "Phiên bản",
+    "setupRemoteConnections": "Thiết lập kết nối từ xa",
+    "currentVisitors": "Khách hiện tại",
+    "navigationLayout": "bố cục điều hướng",
+    "topBarButton": "Nút Thanh Trên",
+    "sideBarButton": "Nút Thanh Bên"
+  },
+  "language": {
+    "brazilian_portuguese": "Tiếng Bồ Đào Nha",
+    "english": "Tiếng Anh",
+    "spanish": "Tiếng Tây Ban Nha",
+    "simplified_chinese": "Tiếng Trung giản thể",
+    "persian": "Tiếng Ba Tư"
+  },
+  "menu": {
+    "auth": "Xác thực",
+    "buttons": "Các nút",
+    "timelines": "Dòng thời gian",
+    "dashboard": "Bảng điều khiển",
+    "billing": "Thanh toán",
+    "login": "Đăng nhập",
+    "preferences": "Tùy chỉnh tài khoản",
+    "payments": "Thanh toán",
+    "settings": "Cài đặt ứng dụng",
+    "pricing-plans": "Gói giá",
+    "payment-methods": "Phương thức thanh toán",
+    "signup": "Đăng ký",
+    "recover-password": "Khôi phục mật khẩu",
+    "recover-password-email": "Email khôi phục mật khẩu",
+    "404": "404",
+    "faq": "Câu hỏi thường gặp",
+    "users": "Người dùng",
+    "projects": "Dự án"
+  },
+  "messages": {
+    "all": "Xem tất cả tin nhắn",
+    "new": "Tin nhắn mới từ {name}",
+    "mark_as_read": "Đánh dấu là đã đọc"
+  },
+  "navbar": {
+    "messageUs": "Yêu cầu phát triển web:",
+    "repository": "Kho GitHub"
+  },
+  "notifications": {
+    "all": "Xem tất cả thông báo",
+    "less": "Xem ít thông báo hơn",
+    "mark_as_read": "Đánh dấu là đã đọc",
+    "sentMessage": "đã gửi cho bạn một tin nhắn",
+    "uploadedZip": "đã tải lên một tệp Zip mới với {type}",
+    "startedTopic": "đã bắt đầu một chủ đề mới"
+  },
+  "user": {
+    "language": "Thay đổi ngôn ngữ",
+    "logout": "Đăng xuất",
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt",
+    "billing": "Thanh toán",
+    "faq": "Câu hỏi thường gặp",
+    "helpAndSupport": "Hỗ trợ & trợ giúp",
+    "projects": "Dự án",
+    "account": "Tài khoản",
+    "explore": "Khám phá"
+  },
+  "treeView": {
+    "basic": "Cơ bản",
+    "icons": "Biểu tượng",
+    "selectable": "Có thể chọn",
+    "editable": "Có thể chỉnh sửa",
+    "advanced": "Nâng cao"
+  },
+  "chat": {
+    "title": "Trò chuyện",
+    "sendButton": "Gửi"
+  },
+  "spacingPlayground": {
+    "value": "Giá trị",
+    "margin": "Lề",
+    "padding": "Đệm"
+  },
+  "spacing": {
+    "title": "Khoảng cách"
+  },
+  "cards": {
+    "cards": "Thẻ",
+    "fixed": "Cố định",
+    "floating": "Nổi",
+    "contentText": "Những sọc độc đáo của ngựa vằn khiến chúng trở thành một trong những loài động vật quen thuộc với con người.",
+    "contentTextLong": "Những sọc độc đáo của ngựa vằn khiến chúng trở thành một trong những loài động vật quen thuộc với con người. Chúng xuất hiện trong nhiều môi trường sống khác nhau, như đồng cỏ, savan, rừng, bụi gai, núi, và đồi ven biển. Các yếu tố nhân tạo đã tác động nghiêm trọng đến dân số ngựa vằn, đặc biệt là săn bắt lấy da và phá hủy môi trường sống. Ngựa vằn Grévy và ngựa vằn núi đang bị đe dọa. Trong khi đó, ngựa vằn đồng bằng phong phú hơn nhiều, một phân loài của chúng là quagga.",
+    "rowHeight": "Chiều cao hàng",
+    "title": {
+      "default": "Mặc định",
+      "withControls": "Với các điều khiển",
+      "customHeader": "Tiêu đề tùy chỉnh",
+      "withoutHeader": "Không có tiêu đề",
+      "withImage": "Với hình ảnh",
+      "withTitleOnImage": "Với tiêu đề trên hình ảnh",
+      "withCustomTitleOnImage": "Với tiêu đề tùy chỉnh trên hình ảnh",
+      "withStripe": "Với sọc",
+      "withBackground": "Với nền"
+    },
+    "button": {
+      "main": "Chính",
+      "cancel": "Hủy bỏ",
+      "showMore": "Xem thêm",
+      "readMore": "Xem thêm"
+    },
+    "link": {
+      "edit": "Chỉnh sửa",
+      "setAsDefault": "Đặt làm mặc định",
+      "delete": "Xóa",
+      "traveling": "Đi du lịch",
+      "france": "Pháp",
+      "review": "Đánh giá",
+      "feedback": "Để lại phản hồi",
+      "readFull": "Đọc toàn bộ bài viết",
+      "secondaryAction": "Hành động phụ",
+      "action1": "Hành động 1",
+      "action2": "Hành động 2"
+    }
+  },
+  "colors": {
+    "themeColors": "Màu chủ đề",
+    "extraColors": "Màu bổ sung",
+    "gradients": {
+      "basic": {
+        "title": "Gradient nút"
+      },
+      "hovered": {
+        "title": "Gradient nút khi di chuột",
+        "text": "Áp dụng tăng 15% độ sáng cho một kiểu gốc (gradient hoặc màu phẳng) khi di chuột."
+      },
+      "pressed": {
+        "title": "Gradient nút khi nhấn",
+        "text": "Áp dụng giảm 15% độ sáng cho một kiểu gốc (gradient hoặc màu phẳng) khi nhấn."
+      }
+    }
+  },
+  "tabs": {
+    "alignment": "Căn chỉnh tab",
+    "overflow": "Tràn tab",
+    "hidden": "Tab ẩn thanh trượt",
+    "grow": "Tab phát triển"
+  },
+  "helpAndSupport": "Hỗ trợ & trợ giúp",
+  "aboutVuesticAdmin": "Về Vuestic Admin",
+  "supportAndConsulting": "Hỗ trợ & Tư vấn",
+  "search": {
+    "placeholder": "Tìm kiếm..."
+  },
+  "buttonSelect": {
+    "dark": "Tối",
+    "light": "Sáng"
+  },
+  "vuestic": {
+    "search": "Tìm kiếm",
+    "noOptions": "Không tìm thấy mục nào",
+    "ok": "OK",
+    "cancel": "Hủy bỏ",
+    "uploadFile": "Tải lên tệp",
+    "undo": "Hoàn tác",
+    "dropzone": "Kéo tệp vào đây để tải lên",
+    "fileDeleted": "Tệp đã xóa",
+    "closeAlert": "Đóng cảnh báo",
+    "backToTop": "Quay lại đầu trang",
+    "toggleDropdown": "Bật tắt dropdown",
+    "carousel": "băng chuyền",
+    "goPreviousSlide": "đi đến trang trước",
+    "goNextSlide": "đi đến trang tiếp theo",
+    "goSlide": "đi đến trang {index}",
+    "slideOf": "trang {index} trên {length}",
+    "close": "đóng",
+    "openColorPicker": "mở chọn màu",
+    "colorSelection": "lựa chọn màu",
+    "colorName": "màu {color}",
+    "decreaseCounter": "giảm đếm",
+    "increaseCounter": "tăng đếm",
+    "selectAllRows": "chọn tất cả các hàng",
+    "sortColumnBy": "sắp xếp cột theo {name}",
+    "selectRowByIndex": "chọn hàng {index}",
+    "resetDate": "đặt lại ngày",
+    "nextPeriod": "giai đoạn tiếp theo",
+    "switchView": "chuyển chế độ xem",
+    "previousPeriod": "giai đoạn trước",
+    "removeFile": "xóa tệp",
+    "reset": "đặt lại",
+    "pagination": "phân trang",
+    "goToTheFirstPage": "đi đến trang đầu tiên",
+    "goToPreviousPage": "đi đến trang trước",
+    "goToSpecificPage": "đi đến trang {page}",
+    "goToSpecificPageInput": "nhập số trang để đi",
+    "goNextPage": "đi đến trang tiếp theo",
+    "goLastPage": "đi đến trang cuối cùng",
+    "currentRating": "đánh giá hiện tại {value} trên {max}",
+    "voteRating": "bỏ phiếu đánh giá {value} trên {max}",
+    "optionsFilter": "bộ lọc tùy chọn",
+    "splitPanels": "tách bảng",
+    "movePaginationLeft": "di chuyển phân trang sang trái",
+    "movePaginationRight": "di chuyển phân trang sang phải",
+    "resetTime": "đặt lại thời gian",
+    "closeToast": "đóng thông báo",
+    "selectedOption": "Tùy chọn đã chọn",
+    "noSelectedOption": "Không có tùy chọn nào được chọn",
+    "breadcrumbs": "dấu phân cách",
+    "counterValue": "giá trị đếm",
+    "selectedDate": "ngày đã chọn",
+    "selectedTime": "thời gian đã chọn",
+    "progressState": "trạng thái tiến độ",
+    "color": "màu",
+    "next": "Tiếp theo",
+    "back": "Trước",
+    "finish": "Hoàn thành",
+    "step": "bước",
+    "progress": "tiến độ",
+    "loading": "Đang tải",
+    "sliderValue": "Giá trị thanh trượt hiện tại là {value}",
+    "switch": "Chuyển đổi",
+    "inputField": "Trường nhập",
+    "fileTypeIncorrect": "Loại tệp không đúng",
+    "select": "Chọn một tùy chọn"
+  }
+}

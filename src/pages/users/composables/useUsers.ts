@@ -27,6 +27,7 @@ export const useUsers = (options?: {
         sorting: unref(sorting),
         pagination: unref(pagination),
       })
+      console.log(usersStore.items)
       pagination.value = usersStore.pagination
     } finally {
       isLoading.value = false

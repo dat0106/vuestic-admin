@@ -38,6 +38,7 @@ const { init: notify } = useToast()
 
 const onProjectSaved = async (project: Project) => {
   doShowProjectFormModal.value = false
+  console.log('project', project)
   if ('id' in project) {
     await update(project as Project)
     notify({
