@@ -20,7 +20,7 @@
       </div>
       <AppLayoutNavigation v-if="!isMobile" class="p-4" />
       <main class="p-4 pt-0">
-        <article>
+        <article style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start">
           <RouterView />
         </article>
       </main>
@@ -31,7 +31,7 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref, computed } from 'vue'
 import { storeToRefs } from 'pinia'
-import { onBeforeRouteUpdate } from 'vue-router'
+import { onBeforeRouteUpdate, RouterView } from 'vue-router'
 import { useBreakpoint } from 'vuestic-ui'
 
 import { useGlobalStore } from '../stores/global-store'

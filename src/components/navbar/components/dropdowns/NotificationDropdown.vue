@@ -1,9 +1,13 @@
 <template>
   <VaDropdown :offset="[13, 0]" class="notification-dropdown" stick-to-edges :close-on-content-click="false">
     <template #anchor>
-      <VaButton preset="secondary" color="textPrimary">
+      <VaButton
+        preset="secondary"
+        color="textPrimary"
+        style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end"
+      >
         <VaBadge overlap>
-          <template #text> 2+</template>
+          <template #text> 2+ </template>
           <VaIconNotification class="notification-dropdown__icon" />
         </VaBadge>
       </VaButton>

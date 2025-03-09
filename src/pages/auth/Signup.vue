@@ -63,8 +63,11 @@
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { useForm, useToast } from 'vuestic-ui'
-
+// import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 const { validate } = useForm('form')
+
+// const auth = getAuth()
+
 const { push } = useRouter()
 const { init } = useToast()
 
@@ -73,16 +76,35 @@ const formData = reactive({
   password: '',
   repeatPassword: '',
 })
-
-const submit = () => {
+// use firebase to create a new user
+const submit = async () => {
   if (validate()) {
-    init({
-      message: "You've successfully signed up",
-      color: 'success',
-    })
-    push({ name: 'dashboard' })
+    try {
+      // const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password)
+      // console.log(userCredential)
+      init({
+        message: "You've successfully signed up",
+        color: 'success',
+      })
+      push({ name: 'dashboard' })
+    } catch (error) {
+      init({
+        message: 'An error occurred. Please try again',
+        color: 'danger',
+      })
+    }
   }
 }
+
+// const submit = () => {
+//   if (validate()) {
+//     init({
+//       message: "You've successfully signed up",
+//       color: 'success',
+//     })
+//     push({ name: 'dashboard' })
+//   }
+// }
 
 const passwordRules: ((v: string) => boolean | string)[] = [
   (v) => !!v || 'Password field is required',

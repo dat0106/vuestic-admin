@@ -1,6 +1,7 @@
 import api from '../../services/api'
 import { Project } from '../../pages/projects/types'
 
+// Simulate API calls
 export type Pagination = {
   page: number
   perPage: number
@@ -28,6 +29,11 @@ export const getProjects = async (options: Partial<Sorting> & Pagination) => {
 export const addProject = async (project: Omit<Project, 'id' | 'created_at'>) => {
   const headers = new Headers()
   headers.append('Content-Type', 'application/json')
+  // const replaceProject = {
+  //   ...project,
+  //   project_owner: project.project_owner['id'],
+  //   team: [],
+  // }
 
   return fetch(api.allProjects(), { method: 'POST', body: JSON.stringify(project), headers }).then((r) => r.json())
 }

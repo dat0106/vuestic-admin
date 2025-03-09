@@ -1,103 +1,68 @@
-<p align="center">
-  <a href="https://vuestic.dev" target="_blank">
-    <img alt="Vuestic UI Logo" width="220" src="./.github/assets/vuestic-admin-logo.png">
-  </a>
-</p>
+<p align="center"> <a href="https://vuestic.dev" target="_blank"> <img alt="Vuestic UI Logo" width="220" src="./.github/assets/vuestic-admin-logo.png"> </a> </p><p align="center"> Mẫu quản trị miễn phí và đẹp mắt, được xây dựng bằng Vue 3, Vite, Pinia và Tailwind CSS. Thiết kế để tạo ra các giao diện quản trị hiệu quả, đáp ứng và tải nhanh.</br> Được phát triển bởi <a href="https://epicmax.co">Epicmax</a>.</br> Dựa trên thư viện <a href="https://ui.vuestic.dev">Vuestic UI</a>. </p><p align="center"> <a href="https://admin-demo.vuestic.dev"> Demo trực tuyến </a> | <a href="https://admin-landing.vuestic.dev/"> Về Vuestic Admin </a> | <a href="https://ui.vuestic.dev/">Tài liệu Vuestic UI</a> </p>
+Vuestic Admin được xây dựng bằng Vuestic UI. Xem các
+<a href="https://github.com/epicmaxco/vuestic-ui/issues">vấn đề</a>,
+<a href="https://ui.vuestic.dev/en/contribution/guide">hướng dẫn đóng góp</a> và tham gia
+<a href="https://discord.gg/jTKTjj2weV">máy chủ Discord</a> của chúng tôi để giúp chúng tôi cải thiện trải nghiệm Vuestic Admin và Vuestic UI.
 
-<p align="center">
-  免费且美观的管理模板，使用Vue 3、Vite、Pinia和Tailwind CSS构建。设计用于构建高效、响应式和快速加载的管理界面。</br>
-  由<a href="https://epicmax.co">Epicmax</a>开发。</br>
-  基于<a href="https://ui.vuestic.dev">Vuestic UI</a>库。
-</p>
+<p align="center"> <a href="https://admin.vuestic.dev" target="_blank"> <img src="./public/vuestic-admin-image.png" align="center" width="888px"/> </a> </p>
+Bắt đầu nhanh
+Sử dụng lệnh sau để nhanh chóng thiết lập một dự án Vuestic Admin mới hoặc một dự án Vite hoặc Nuxt trống sử dụng Vuestic UI.
 
-<p align="center">
-  <a href="https://admin-demo.vuestic.dev"> 在线演示 </a> |
-  <a href="https://admin-landing.vuestic.dev/"> 关于Vuestic Admin </a> |
-  <a href="https://ui.vuestic.dev/">Vuestic UI文档</a>
-</p>
-
-> Vuestic Admin是使用[Vuestic UI](https://ui.vuestic.dev)构建的。查看我们的
-> <a href="https://github.com/epicmaxco/vuestic-ui/issues">问题</a>，
-> <a href="https://ui.vuestic.dev/en/contribution/guide">贡献指南</a> 并参与我们的
-> <a href="https://discord.gg/jTKTjj2weV">Discord服务器</a>，帮助我们改进Vuestic Admin和Vuestic UI体验。
-
-<p align="center">
-  <a href="https://admin.vuestic.dev" target="_blank">
-    <img src="./public/vuestic-admin-image.png" align="center" width="888px"/>
-  </a>
-</p>
-
-### 快速入门
-
-使用以下命令快速搭建新的[Vuestic Admin](admin-demo.vuestic.ui)或使用[Vuestic UI](ui.vuestic.dev)的空白Vite或Nuxt项目。
-
-```bash
+bash
+Copy
 npm create vuestic@latest
-```
+Sau khi cài đặt Vuestic Admin, chạy npm install để cài đặt các phụ thuộc, sau đó chạy npm run dev để khởi động máy chủ phát triển cục bộ.
 
-安装[Vuestic Admin](admin.vuestic.ui)后，运行 `npm install` 安装依赖，然后运行 `npm run dev` 启动本地开发服务器。
+Tài liệu
+Tài liệu, hướng dẫn, ví dụ và hướng dẫn có sẵn tại ui.vuestic.dev.
 
-### 文档
+Máy chủ Discord chính thức
+Đặt câu hỏi trên máy chủ Discord của cộng đồng chính thức.
 
-文档、指南、示例和教程可在[ui.vuestic.dev](https://ui.vuestic.dev)上找到。
+Tính năng
+Vue 3, Vite, Pinia và Tailwind CSS - Phát triển nhanh chóng và hiệu quả
 
-### 官方Discord服务器
+Chủ đề tối - Hiện đại và nổi bật
 
-在官方社区的 [discord服务器](https://discord.gg/jTKTjj2weV)上提问。
+Cấu hình toàn cục - Tùy chỉnh dễ dàng
 
-### 特性
+Khả năng truy cập - Thân thiện và bao quát
 
-- **Vue 3、Vite、Pinia和Tailwind CSS -** 快速高效的开发
-- **深色主题 -** 现代且引人注目
-- **全局配置 -** 轻松定制
-- **可访问性 -** 包容且用户友好
-- **i18n集成 -** 便于全球本地化
-- **教育资源 -** 适用于学习和提高技能
-- **响应式设计 -** 无缝适应所有设备
-- **专业支持 -** 专家提供可靠帮助
-- **高度可定制 -** 可根据项目风格定制
+Tích hợp i18n - Dễ dàng địa phương hóa toàn cầu
 
-### 贡献
+Tài nguyên giáo dục - Phù hợp để học tập và nâng cao kỹ năng
 
-感谢您所有出色的PR、问题和想法。
+Thiết kế đáp ứng - Thích ứng liền mạch trên mọi thiết bị
 
-<a href="https://github.com/epicmaxco/vuestic-admin/graphs/contributors">
-<img src="https://opencollective.com/vuestic-admin/contributors.svg?width=890&button=false" />
-</a>
-<br>
+Hỗ trợ chuyên nghiệp - Hỗ trợ đáng tin cậy từ các chuyên gia
 
-欢迎随时加入：查看我们的<a href="https://ui.vuestic.dev/en/contribution/guide">贡献指南</a>，[开放问题](https://github.com/epicmaxco/vuestic-ui/issues)和[Discord服务器](https://discord.gg/jTKTjj2weV)。
+Tùy chỉnh cao - Có thể điều chỉnh theo phong cách dự án
 
-### 合作伙伴与赞助商 ❤️
+Đóng góp
+Cảm ơn tất cả các PR, vấn đề và ý tưởng tuyệt vời của bạn.
 
+<a href="https://github.com/epicmaxco/vuestic-admin/graphs/contributors"> <img src="https://opencollective.com/vuestic-admin/contributors.svg?width=890&button=false" /> </a> <br>
+Hãy tham gia bất cứ lúc nào: xem <a href="https://ui.vuestic.dev/en/contribution/guide">hướng dẫn đóng góp</a>, các vấn đề mở và máy chủ Discord của chúng tôi.
+
+Đối tác và nhà tài trợ ❤️
 <img src="./.github/assets/sponsors.png" loading="lazy" alt="Epicmax, vuejobs, ag-grid, flatlogic, browserstack and jetbrains" width="400px">
+Trở thành đối tác: hello@epicmax.co
 
-成为合作伙伴：[hello@epicmax.co](mailto:hello@epicmax.co)
+Tôi có thể thuê bạn không?
+Epicmax đã cam kết với mã nguồn mở ngay từ đầu. Vuestic Admin được tạo ra và hỗ trợ bởi Epicmax, với nhiều năm hỗ trợ.
 
-### 我能雇佣你们吗？
+Trong lĩnh vực phát triển frontend, Epicmax đã có hơn 6 năm kinh nghiệm chuyên môn trên cả dự án thương mại và mã nguồn mở, hợp tác với hơn 47 khách hàng trên toàn cầu trong nhiều lĩnh vực. Chúng tôi thường xuyên thực hiện đánh giá mã trên các dự án của mình và hiện rất vui mừng cung cấp dịch vụ này không chỉ cho khách hàng hiện tại mà còn cho bất kỳ ai muốn hiểu trạng thái mã frontend của họ và đảm bảo nó an toàn và cập nhật!
 
-[Epicmax](https://epicmax.co) 从一开始就致力于开源。Vuestic Admin是由Epicmax创建并支持的，经过多年的支持。
+Bạn có thể yêu cầu tư vấn hoặc đặt dịch vụ phát triển web thông qua biểu mẫu này của Epicmax 😎
 
-在前端开发方面，Epicmax在商业和开源项目上已经有超过6年的专业经验，与全球各个领域的47个以上的客户合作。我们定期对我们的项目进行代码审核，现在很高兴不仅向我们现有的客户提供此服务，而且向任何希望了解其前端代码状态并确保其安全和最新的人提供此服务！
+Gửi lời chào: <a href="mailto:hello@epicmax.co">hello@epicmax.co</a>. Chúng tôi rất mong được hợp tác với bạn!
 
-您可以通过[Epicmax的这个表单](https://epicmax.co/contacts)请求咨询或订购Web开发服务 😎
+Một số công việc khác chúng tôi đã làm 🤘
 
-打个招呼：<a href="mailto:hello@epicmax.co">hello@epicmax.co</a>。我们将很高兴与您合作！
+Gặp gỡ đội ngũ
 
-[我们做过的其他工作](https://epicmax.co) 🤘
-
-[认识团队](https://ui.vuestic.dev/introduction/team)
-
-### 奖项
-
-<a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">
-    <img src="https://i.imgur.com/ZeQPZ3Q.png" align="center" width="150px"/>
-</a>
-<p>
-  由<a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">@flatlogic</a>市场提供
-</p>
-
-### 关注我们
-
-随时关注最新的Vuestic新闻！在[Twitter上](https://twitter.com/vuestic_ui)
-或[Linkedin上](
+Giải thưởng
+<a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank"> <img src="https://i.imgur.com/ZeQPZ3Q.png" align="center" width="150px"/> </a> <p> Được cung cấp bởi thị trường <a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">@flatlogic</a> </p>
+Theo dõi chúng tôi
+Cập nhật tin tức mới nhất về Vuestic! Theo dõi trên Twitter
+hoặc Linkedin

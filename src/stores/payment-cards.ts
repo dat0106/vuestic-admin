@@ -35,8 +35,7 @@ const fetchPaymentCards = async () => {
   ]
 }
 
-export const usePaymentCardsStore = defineStore({
-  id: 'paymentCards',
+export const usePaymentCardsStore = defineStore('paymentCards', {
   state: () => ({
     paymentCards: [] as PaymentCard[],
     loading: false,

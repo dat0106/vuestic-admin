@@ -17,6 +17,7 @@ const { locale } = useI18n()
 
 const languages: LanguageMap = {
   english: 'English',
+  vietname: 'Vietnamese',
   spanish: 'Spanish',
   brazilian_portuguese: 'Português',
   simplified_chinese: 'Simplified Chinese',
@@ -25,6 +26,7 @@ const languages: LanguageMap = {
 
 const languageCodes: LanguageMap = {
   gb: languages.english,
+  vi: languages.vietname,
   es: languages.spanish,
   br: languages.brazilian_portuguese,
   cn: languages.simplified_chinese,

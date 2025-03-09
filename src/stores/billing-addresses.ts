@@ -39,8 +39,7 @@ const fetchBillingAddresses = async () => {
   ] as BillingAddress[]
 }
 
-export const useBillingAddressesStore = defineStore({
-  id: 'billingAddresses',
+export const useBillingAddressesStore = defineStore('billingAddresses', {
   state: () => ({
     billingAddresses: [] as BillingAddress[],
     loading: false,
