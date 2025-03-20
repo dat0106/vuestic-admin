@@ -13,6 +13,10 @@
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "types": ["vite/client"],
+    "baseUrl": ".", // Trỏ đến thư mục gốc
+    "paths": {
+      "@/*": ["src/*"] // Trỏ @ đến thư mục src
+    },
     "allowJs": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "vite.config.ts", "node_modules/vuestic-ui"],

@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import {
+  createUser,
   addUser,
   type Filters,
   getUsers,
@@ -9,7 +10,7 @@ import {
   updateUser,
   uploadAvatar,
 } from '../data/pages/users'
-import { User } from '../pages/users/types'
+import { CreateUser, User } from '../pages/users/types'
 
 export const useUsersStore = defineStore('users', {
   state: () => {
@@ -28,6 +29,11 @@ export const useUsersStore = defineStore('users', {
       })
       this.items = data
       this.pagination = pagination
+    },
+
+    async createUser(user: CreateUser) {
+      const newUser = await createUser(user)
+      return newUser
     },
 
     async add(user: User) {

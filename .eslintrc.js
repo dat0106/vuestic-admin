@@ -23,6 +23,7 @@ module.exports = {
   ],
 
   rules: {
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'prettier/prettier': ['warn', {}, { usePrettierrc: true, indent: 2 }],
