@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
-import { User } from '../pages/users/types'
+import { CreateUser, User } from '../pages/users/types'
 import { UserCredential, getAuth, getIdToken, signOut } from 'firebase/auth'
+import { useUsersStore } from '@/stores/users'
 import router from '@/router'
 
 export const useGlobalStore = defineStore('global', {
@@ -17,6 +18,27 @@ export const useGlobalStore = defineStore('global', {
   },
 })
 
+// create function create user form UserCredential
+const createUser = async (userCredential: UserCredential) => {
+  const user = userCredential.user
+  const createUser: CreateUser = {
+    uid: user.uid,
+    role: 'user',
+    active: true,
+    email: user.email || '',
+    fullname: user.displayName || '',
+    username: user.email || '',
+    avatar: user.photoURL || '',
+    projects: [],
+    phone: user.phoneNumber || '',
+    address: '',
+    notes: '',
+  }
+  const useStore = useUsersStore()
+  const userServer = await useStore.createUser(createUser)
+  return userServer
+}
+
 export const useGlobalAuthStore = defineStore('auth', {
   state: () => {
     return {
@@ -31,22 +53,15 @@ export const useGlobalAuthStore = defineStore('auth', {
       this.user = user
     },
     async setUserCredential(userCredential: UserCredential) {
-      // this.user = {
-      //   email: userCredential.user.email || '',
-      //   fullname: userCredential.user.displayName || '',
-      //   username: userCredential.user.displayName || '',
-      //   role: 'user',
-      //   avatar: userCredential.user.photoURL || '',
-      //   projects: [],
-      //   notes: '',
-      //   active: true,
-      //   uid: userCredential.user.uid,
-      // }
       this.accessToken = await userCredential.user.getIdToken()
       console.log('this.accessToken', this.accessToken)
       // get time expire token in access token
-      this.timeExpire = 1000
+      // this.timeExpire = 1000
       this.refreshToken = userCredential.user.refreshToken || ''
+      this.user = await createUser(userCredential)
+      const idToken = await userCredential.user.getIdToken()
+      // console.log('idToken', idToken)
+      this.accessToken = idToken
     },
 
     async getRefreshToken(): Promise<string> {
@@ -64,7 +79,7 @@ export const useGlobalAuthStore = defineStore('auth', {
 
       const auth = getAuth()
       if (auth.currentUser) {
-        const idToken = await getIdToken(auth.currentUser, true)
+        const idToken = await getIdToken(auth.currentUser)
         console.log('this.getRefreshToken accessToken', this.accessToken)
         this.accessToken = idToken
         return idToken

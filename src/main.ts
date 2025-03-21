@@ -16,6 +16,8 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 library.add(faGoogle)
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -29,6 +31,18 @@ const firebaseConfig = {
 }
 // Initialize Firebase
 initializeApp(firebaseConfig)
+
+const auth = getAuth()
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // Người dùng đã đăng nhập
+    console.log('User is signed in:', user)
+  } else {
+    // Người dùng chưa đăng nhập
+    console.log('No user is signed in.')
+  }
+})
 const app = createApp(App)
 
 stores.use(piniaPluginPersistedstate)

@@ -84,37 +84,15 @@ import {
   GoogleAuthProvider,
   FacebookAuthProvider,
   signInWithPopup,
-  UserCredential,
 } from 'firebase/auth'
 import { useGlobalAuthStore } from '@/stores/global-store'
-import { useUsersStore } from '@/stores/users'
-import { CreateUser } from '../users/types'
 const { validate } = useForm('form')
 
 const auth = getAuth()
 
 const globalAuthStore = useGlobalAuthStore()
-const useStore = useUsersStore()
 const { push } = useRouter()
 const { init } = useToast()
-// create function create user form UserCredential
-const createUser = async (userCredential: UserCredential) => {
-  const user = userCredential.user
-  const createUser: CreateUser = {
-    uid: user.uid,
-    role: 'user',
-    active: true,
-    email: user.email || '',
-    fullname: user.displayName || '',
-    username: user.email || '',
-    avatar: user.photoURL || '',
-    projects: [],
-    phone: user.phoneNumber || '',
-    address: '',
-    notes: '',
-  }
-  await useStore.createUser(createUser)
-}
 const formData = reactive({
   email: '',
   password: '',
@@ -127,10 +105,6 @@ const signInWithGoogle = async () => {
   try {
     const userCredential = await signInWithPopup(auth, provider)
     await globalAuthStore.setUserCredential(userCredential)
-    const user = await createUser(userCredential)
-    console.log('aaaa', user)
-    const idToken = await userCredential.user.getIdToken()
-    console.log('idToken', idToken)
     init({
       message: "You've successfully signed up",
       color: 'success',
@@ -149,12 +123,7 @@ const signInWithFacebook = async () => {
   const provider = new FacebookAuthProvider()
   try {
     const userCredential = await signInWithPopup(auth, provider)
-    // const idToken = await userCredential.user.getIdToken()
-    console.log(userCredential.user)
-    globalAuthStore.setUserCredential(userCredential)
-    const user = await createUser(userCredential)
-    console.log(user)
-
+    await globalAuthStore.setUserCredential(userCredential)
     init({
       message: "You've successfully signed up",
       color: 'success',
@@ -173,10 +142,6 @@ const submit = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password)
       await globalAuthStore.setUserCredential(userCredential)
-      const user = await createUser(userCredential)
-      console.log(user)
-      const idToken = await userCredential.user.getIdToken()
-      console.log('idToken', idToken)
       // set
       init({
         message: "You've successfully signed up",
